@@ -10,6 +10,8 @@
 		409335C91E19845C00F48799 /* ItemExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409335C81E19845C00F48799 /* ItemExtention.swift */; };
 		409335CC1E1994E500F48799 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409335CB1E1994E500F48799 /* MaterialView.swift */; };
 		409335CE1E19ACD800F48799 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409335CD1E19ACD800F48799 /* ItemCell.swift */; };
+		40C50A201E1C554200FD14A7 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C50A1F1E1C554200FD14A7 /* CustomTextField.swift */; };
+		40C50A231E1C5A6C00FD14A7 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C50A221E1C5A6C00FD14A7 /* ItemDetailsVC.swift */; };
 		40F87B691DD8F74500B7D0D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F87B681DD8F74500B7D0D7 /* AppDelegate.swift */; };
 		40F87B6B1DD8F74500B7D0D7 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F87B6A1DD8F74500B7D0D7 /* MainVC.swift */; };
 		40F87B6E1DD8F74500B7D0D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F87B6C1DD8F74500B7D0D7 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 		409335C81E19845C00F48799 /* ItemExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemExtention.swift; sourceTree = "<group>"; };
 		409335CB1E1994E500F48799 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		409335CD1E19ACD800F48799 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		40C50A1F1E1C554200FD14A7 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		40C50A221E1C5A6C00FD14A7 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
 		40F87B651DD8F74500B7D0D7 /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F87B681DD8F74500B7D0D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40F87B6A1DD8F74500B7D0D7 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -46,10 +50,20 @@
 		409335CA1E1994BF00F48799 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				40C50A1F1E1C554200FD14A7 /* CustomTextField.swift */,
 				409335CB1E1994E500F48799 /* MaterialView.swift */,
 				409335CD1E19ACD800F48799 /* ItemCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		40C50A211E1C59E900FD14A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				40F87B6A1DD8F74500B7D0D7 /* MainVC.swift */,
+				40C50A221E1C5A6C00FD14A7 /* ItemDetailsVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		40F87B5C1DD8F74500B7D0D7 = {
@@ -71,10 +85,10 @@
 		40F87B671DD8F74500B7D0D7 /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
-				409335CA1E1994BF00F48799 /* View */,
 				40F87B8D1DD8FC6500B7D0D7 /* Model */,
+				409335CA1E1994BF00F48799 /* View */,
+				40C50A211E1C59E900FD14A7 /* Controller */,
 				40F87B681DD8F74500B7D0D7 /* AppDelegate.swift */,
-				40F87B6A1DD8F74500B7D0D7 /* MainVC.swift */,
 				40F87B6C1DD8F74500B7D0D7 /* Main.storyboard */,
 				40F87B721DD8F74500B7D0D7 /* Assets.xcassets */,
 				40F87B741DD8F74500B7D0D7 /* LaunchScreen.storyboard */,
@@ -165,9 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C50A201E1C554200FD14A7 /* CustomTextField.swift in Sources */,
 				40F87B6B1DD8F74500B7D0D7 /* MainVC.swift in Sources */,
 				40F87B691DD8F74500B7D0D7 /* AppDelegate.swift in Sources */,
 				409335CE1E19ACD800F48799 /* ItemCell.swift in Sources */,
+				40C50A231E1C5A6C00FD14A7 /* ItemDetailsVC.swift in Sources */,
 				409335CC1E1994E500F48799 /* MaterialView.swift in Sources */,
 				40F87B711DD8F74500B7D0D7 /* DreamLister.xcdatamodeld in Sources */,
 				409335C91E19845C00F48799 /* ItemExtention.swift in Sources */,
